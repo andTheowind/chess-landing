@@ -1,6 +1,5 @@
 /* Стили сайта: токены, база, шапка, компоненты, адаптив */
 
-
 :root {
   --color-white: #ffffff;
   --color-gray-light: #d6d6d6;
@@ -1025,7 +1024,7 @@ body {
   background-color: var(--color-primary);
 }
 
-@media screen and (min-width: 1222px) {
+@media screen and (min-width: 1262px) {
   .support {
     padding-top: var(--spacing-4xl);
     padding-bottom: var(--support-section-padding-bottom);
@@ -1053,7 +1052,8 @@ body {
   .details__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: var(--details-desktop-row-short)
+    grid-template-rows:
+      var(--details-desktop-row-short)
       var(--details-desktop-row-short) var(--details-desktop-row-tall);
     gap: var(--spacing-lg);
   }
@@ -1198,13 +1198,13 @@ body {
   }
 }
 
-@media screen and (max-width: 1222px) and (min-width: 768px) {
+@media screen and (max-width: 1262px) and (min-width: 768px) {
   .button--theme-outline:hover {
     background-color: var(--color-black);
   }
 }
 
-@media screen and (max-width: 1222px) {
+@media screen and (max-width: 1262px) {
   .button--theme-outline {
     background-color: var(--color-white);
     border: 2px var(--color-white) solid;
@@ -1356,9 +1356,7 @@ body {
   }
 
   .details-figure__wrapper {
-    grid-auto-columns: calc(
-      100% / var(--layout-carousel-column-count-mid)
-    );
+    grid-auto-columns: calc(100% / var(--layout-carousel-column-count-mid));
   }
 }
 
@@ -1580,7 +1578,7 @@ body {
   }
 
   .details .text,
-  .support p.text { 
+  .support p.text {
     font-size: var(--font-size-xs);
   }
 }
